@@ -7,37 +7,66 @@
   <link href="./output.css" rel="stylesheet">
   <title>Results summary component</title>
 </head>
-<body>
-  <div>
-    <h3 class="text-3xl underline bg-red-600">Hello world!!</h3>
+<body class="font-body">
+  <div class="flex min-h-screen items-center justify-center bg-pale-blue">
+    <div class="bg-white w-[490px] h-96 rounded-lg flex">
+      <!-- first part -->
+      <div class="bg-gradient-to-b from-light-slate-blue to-light-royal-blue w-1/2 gap-4 rounded-3xl flex flex-col items-center justify-center px-4">
+        <h4 class="text-pale-blue font-normal">Your Result</h4>
+        <div class="flex flex-col items-center justify-center w-28 h-28 rounded-full gap-2 bg-gradient-to-b from-violet-blue to-persian-blue">
+          <p class="text-white text-5xl font-semibold">76</p>
+          <span class="text-gray-300 text-xs">of 100</span>
+        </div>
+        <h4 class="text-white font-semibold text-lg">Great</h4>
+        <p class="text-gray-300 text-sm text-center"> You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <!-- end of first part -->
+      <!-- second part -->
+      <div class="w-1/2 flex flex-col justify-center px-4 gap-6">
+        <h1 class="text-xl font-semibold">Summary</h1>
+        <ul>
+          <li class="bg-light-red-light flex items-center rounded-lg gap-8 py-1 px-4">
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction">
+            <p class="text-light-red-normal text-sm font-semibold">Reaction</p>
+            </div>
+            <div><span class="font-semibold">80</span> / 100</div>
+          </li>
+        </ul>
+        <ul>
+          <li class="bg-orangey-yellow-light flex items-center rounded-lg gap-8 py-1 px-4">
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/icon-memory.svg" alt="memory">
+            <p class="text-orangey-yellow-normal text-sm font-semibold">memory</p>
+            </div>
+            <div><span class="font-semibold">92</span> / 100</div>
+          </li>
+        </ul>
+        <ul>
+          <li class="bg-green-teal-light flex items-center rounded-lg gap-8 py-1 px-4">
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal">
+            <p class="text-green-teal-normal text-sm font-semibold">Verbal</p>
+            </div>
+            <div><span class="font-semibold">61</span> / 100</div>
+          </li>
+        </ul>
+        <ul>
+          <li class="bg-cobalt-blue-light flex items-center rounded-lg gap-8 py-1 px-4">
+            <div class="flex items-center gap-2">
+              <img src="./assets/images/icon-visual.svg" alt="Visual">
+            <p class="text-cobalt-blue-normal text-sm font-semibold">Visual</p>
+            </div>
+            <div><span class="font-semibold">72</span> / 100</div>
+          </li>
+        </ul>
+        <button class="bg-dark-gray-blue text-pale-blue rounded-3xl px-4 py-2">Continue</button>
+      </div>
+      <!-- end of second part -->
+    </div>
   </div>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
   
-  Summary
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hassnae</a>.
-  </div>
 </body>
 </html>
